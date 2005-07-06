@@ -1,0 +1,8 @@
+<environment>
+ <use name=DataFormats/FEDRawData>
+
+ <bin name=testRawData file=testRunner.cpp,FEDRawData_t.cc,FEDRawDataProduct_t.cc >
+   <use name=cppunit>	
+ </bin>
+
+</environment>
