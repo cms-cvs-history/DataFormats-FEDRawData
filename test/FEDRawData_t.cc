@@ -3,11 +3,11 @@
    test file for FEDRawData library
 
    \author Stefano ARGIRO
-   \version $Id$
+   \version $Id: FEDRawData_t.cc,v 1.1 2005/07/06 16:37:54 argiro Exp $
    \date 28 Jun 2005
 */
 
-static const char CVSId[] = "$Id$";
+static const char CVSId[] = "$Id: FEDRawData_t.cc,v 1.1 2005/07/06 16:37:54 argiro Exp $";
 
 #include <cppunit/extensions/HelperMacros.h>
 #include <DataFormats/FEDRawData/interface/FEDRawData.h>
@@ -38,17 +38,17 @@ CPPUNIT_TEST_SUITE_REGISTRATION(testFEDRawData);
 
 void testFEDRawData::testCtor(){
   raw::FEDRawData f;
-  CPPUNIT_ASSERT(f.data_.size()==0);
+  CPPUNIT_ASSERT(f.size()==0);
 
   raw::FEDRawData f2(10);
-  CPPUNIT_ASSERT(f2.data_.size()==size_t(10));
+  CPPUNIT_ASSERT(f2.size()==size_t(10));
 }
 
 void testFEDRawData::testdata(){
   raw::FEDRawData f(3);
-  f.data_[0]='a';
-  f.data_[1]='b';
-  f.data_[2]='c';
+  f.data()[0]='a';
+  f.data()[1]='b';
+  f.data()[2]='c';
  
 
   const unsigned char * buf= f.data();
