@@ -5,3 +5,7 @@
    <use name=cppunit>	
 </bin>
 
+<library name=testDumpFEDRawDataProduct file=DumpFEDRawDataProduct.cc>
+    <flags SEAL_PLUGIN_NAME="testDumpFEDRawDataProduct">
+    <use name=FWCore/Framework>
+</library>
