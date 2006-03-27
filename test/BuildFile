@@ -1,6 +1,7 @@
 
 <use name=DataFormats/FEDRawData>
 
+
 <bin name=testFEDRawData file=FEDRawData_t.cpp,FEDRawDataProduct_t.cc >
    <use name=cppunit>	
 </bin>
