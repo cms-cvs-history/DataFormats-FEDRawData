@@ -3,11 +3,11 @@
    test file for FEDRawData library
 
    \author Stefano ARGIRO
-   \version $Id: FEDRawData_t.cc,v 1.3 2005/10/04 12:23:56 namapane Exp $
+   \version $Id: FEDRawData_t.cc,v 1.4 2005/10/06 18:25:22 namapane Exp $
    \date 28 Jun 2005
 */
 
-static const char CVSId[] = "$Id: FEDRawData_t.cc,v 1.3 2005/10/04 12:23:56 namapane Exp $";
+static const char CVSId[] = "$Id: FEDRawData_t.cc,v 1.4 2005/10/06 18:25:22 namapane Exp $";
 
 #include <cppunit/extensions/HelperMacros.h>
 #include <DataFormats/FEDRawData/interface/FEDRawData.h>
@@ -57,3 +57,6 @@ void testFEDRawData::testdata(){
   CPPUNIT_ASSERT(buf[1] == 'b');
   CPPUNIT_ASSERT(buf[47] == 'c');
 }
+
+
+#include <Utilities/Testing/interface/CppUnit_testdriver.icpp>
