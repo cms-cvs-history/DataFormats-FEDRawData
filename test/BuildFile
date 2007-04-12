@@ -7,6 +7,6 @@
 </bin>
 
 <library name=testDumpFEDRawDataProduct file=DumpFEDRawDataProduct.cc>
-    <flags SEAL_PLUGIN_NAME="testDumpFEDRawDataProduct">
+    <flags EDM_PLUGIN=1>
     <use name=FWCore/Framework>
 </library>
